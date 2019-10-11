@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
 
         apiinterface= Apiclient_home.getapiClient().create(apiinterface_home.class);
         Call<List<contact_userinfo>> call= apiinterface.getcontacts_login(name.getText().toString(),
-                pass.getText().toString());
+                pass.getText().toString() , 2);
         call.enqueue(new Callback<List<contact_userinfo>>() {
             @Override
             public void onResponse(Call<List<contact_userinfo>> call, Response<List<contact_userinfo>> response) {
@@ -60,15 +60,19 @@ public class Login extends AppCompatActivity {
 
                     contactList = response.body();
                     try {
+                        if(contactList.size()==0){
+                            Toast.makeText(Login.this,"هناك خطأ فى الهاتف او الرقم السري ",Toast.LENGTH_LONG).show();
 
-
-                        AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(Login.this);
+                            return ;
+                        }
+                        else{
+                       AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(Login.this);
                         dlgAlert.setMessage("تم تسجيل الدخول بنجاح");
                         dlgAlert.setTitle("Boutique");
                         dlgAlert.setPositiveButton("حسنا", null);
                         dlgAlert.setCancelable(true);
                         dlgAlert.create().show();
-                        startActivity(new Intent(Login.this,Main_Tager.class));}
+                        startActivity(new Intent(Login.this,Main_Tager.class));}}
                     catch (Exception e){
                         Toast.makeText(Login.this,"هناك خطأ فى الهاتف او الرقم السري ",Toast.LENGTH_LONG).show();
 

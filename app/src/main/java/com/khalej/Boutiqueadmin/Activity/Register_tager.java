@@ -94,7 +94,7 @@ public class Register_tager extends AppCompatActivity {
         apiinterface = Apiclient_home.getapiClient().create(apiinterface_home.class);
         Call<ResponseBody> call = apiinterface.getcontacts_newaccount(textInputEditTextname.getText().toString(),
                 textInputEditTextpassword.getText().toString(), textInputEditTextaddress.getText().toString()
-                ,phone);
+                ,phone , 2);
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
