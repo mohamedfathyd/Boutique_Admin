@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.khalej.HelpMe">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Register_tager"></activity>
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.RemoveTager_order" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Tager_orders" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Add_second_category_tager" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Main_Tager" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Image_inside_offer" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Add_offer_image" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Add_offer" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Login" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Add_Image" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Image_inside_category" />
+        <activity
+            android:name="com.khalej.Boutiqueadmin.Activity.WebViewSampleActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.khalej.Boutiqueadmin.Activity.Order_detail"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.khalej.Boutiqueadmin.Activity.Orders" />
+        <activity
+            android:name="com.khalej.Boutiqueadmin.Activity.Delete_annonce"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.khalej.Boutiqueadmin.Activity.Add_annonce"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.khalej.Boutiqueadmin.Activity.Delete_first_category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.khalej.Boutiqueadmin.Activity.Delete_category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.khalej.Boutiqueadmin.Activity.Add_category_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.khalej.Boutiqueadmin.Activity.Add_second_category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.khalej.Boutiqueadmin.Activity.MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
