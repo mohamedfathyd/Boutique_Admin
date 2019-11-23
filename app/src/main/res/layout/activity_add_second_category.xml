@@ -4,7 +4,7 @@
     android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backa"
+    android:background="#99ffffff"
 
     android:layoutDirection="ltr"
     >
@@ -25,7 +25,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:textColor="@color/colorText"
-                android:text="أضافة منتج داخلي"
+                android:text="أضافة قسم لتاجر"
                 android:layout_gravity="center"
                 android:id="@+id/toolbar_title" />
         </android.support.v7.widget.Toolbar>
@@ -78,7 +78,7 @@
                     android:id="@+id/textInputEditTextName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="اسم المنتج"
+                    android:hint="اسم القسم"
                     android:inputType="text"
                     android:maxLines="1"
 
@@ -88,6 +88,7 @@
                 android:id="@+id/textInputLayoutLink"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:background="@drawable/rounded_edittext"
                 android:layout_marginTop="20dp">
 
@@ -96,6 +97,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="السعر"
+                    android:visibility="gone"
                     android:inputType="numberDecimal"
 
 
@@ -107,6 +109,7 @@
                 android:id="@+id/textInputLayoutext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:background="@drawable/rounded_edittext"
                 android:layout_marginTop="20dp">
 
@@ -115,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="تفاصيل المنتج"
-
+                    android:visibility="gone"
                     android:layout_marginTop="10dp"
                     android:inputType="textMultiLine"
                     android:textColor="@color/colora" />
@@ -128,7 +131,7 @@
                 android:layout_marginTop="40dp"
                 android:background="@drawable/shape2"
                 android:textColor="#ffffff"
-                android:text="أضافة المنتج" />
+                android:text="أضافة قسم" />
 
 
         </android.support.v7.widget.LinearLayoutCompat>

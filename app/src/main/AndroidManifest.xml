@@ -19,21 +19,40 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Register_tager"></activity>
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.RemoveTager_order" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Tager_orders" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Add_second_category_tager" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Main_Tager" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Image_inside_offer" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Add_offer_image" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Add_offer" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Login" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Add_Image" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Image_inside_category" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Update_Inside_Annonce_"></activity>
+        <activity android:name="com.khalej.Turbaadmin.Activity.Update_Inside_Annonce" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Delete_inside_annonce" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Orders_Month" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Orders_By_Day" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Delete_offer" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Register_tager" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Register_mandop" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.RemoveTager_order" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Tager_orders" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Mandop_orders" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.All_tager" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.All_mandop" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.All_users" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.All_category" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.update_category" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.update_category_" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Delete_inside_annonce_admin"/>
+        <activity android:name="com.khalej.Turbaadmin.Activity.update_second_category" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.update_second_category_" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Add_second_category_tager" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Main_Tager" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Main_Mandop" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Image_inside_offer" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Add_offer_image" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Add_offer" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Login" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Delete_mandop" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Add_Image" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Image_inside_category" />
         <activity
-            android:name="com.khalej.Boutiqueadmin.Activity.WebViewSampleActivity"
+            android:name="com.khalej.Turbaadmin.Activity.WebViewSampleActivity"
             android:screenOrientation="landscape" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.SplashActivity">
+        <activity android:name="com.khalej.Turbaadmin.Activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,29 +60,38 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.khalej.Boutiqueadmin.Activity.Order_detail"
-            android:screenOrientation="portrait" />
-        <activity android:name="com.khalej.Boutiqueadmin.Activity.Orders" />
-        <activity
-            android:name="com.khalej.Boutiqueadmin.Activity.Delete_annonce"
+            android:name="com.khalej.Turbaadmin.Activity.Order_detail"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.khalej.Boutiqueadmin.Activity.Add_annonce"
+            android:name="com.khalej.Turbaadmin.Activity.Order_detail_mandop"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Orders" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Orders_mandop" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Order_detail_Ready" />
+        <activity android:name="com.khalej.Turbaadmin.Activity.Orders_ready" />
+        <activity
+            android:name="com.khalej.Turbaadmin.Activity.Delete_annonce"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.khalej.Boutiqueadmin.Activity.Delete_first_category"
+            android:name="com.khalej.Turbaadmin.Activity.Add_annonce"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.khalej.Boutiqueadmin.Activity.Delete_category"
+            android:name="com.khalej.Turbaadmin.Activity.Delete_first_category"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.khalej.Boutiqueadmin.Activity.Add_category_"
+            android:name="com.khalej.Turbaadmin.Activity.Delete_category"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.khalej.Boutiqueadmin.Activity.Add_second_category"
+            android:name="com.khalej.Turbaadmin.Activity.Delete_tager"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.khalej.Boutiqueadmin.Activity.MainActivity"
+            android:name="com.khalej.Turbaadmin.Activity.Add_category_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.khalej.Turbaadmin.Activity.Add_second_category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.khalej.Turbaadmin.Activity.MainActivity"
             android:screenOrientation="portrait" />
     </application>
 

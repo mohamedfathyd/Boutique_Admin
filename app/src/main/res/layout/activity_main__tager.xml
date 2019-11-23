@@ -4,7 +4,7 @@
     android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backk"
+    android:background="#99ffffff"
     android:layoutDirection="ltr"
     >
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -30,7 +30,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:textColor="@color/colorText"
-                android:text="لوحة التحكم"
+                android:text="لوحة تحكم تاجر"
                 android:layout_gravity="center"
                 android:id="@+id/toolbar_title" />
 
@@ -52,6 +52,7 @@
                 android:background="@drawable/shape2"
                 android:text="أضافة منتج داخل قسم"
                 android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
                 android:id="@+id/adddouc"
 
                 />
@@ -62,11 +63,33 @@
                 android:layout_gravity="center"
                 android:background="@drawable/shape2"
                 android:text="أضافة صور داخل منتج"
+                android:textColor="#ffffff"
                 android:layout_marginTop="30dp"
                 android:id="@+id/noti"
 
                 />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape2"
+                android:text="مسح منتج"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
+                android:id="@+id/deleteinsideannonce"
 
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape2"
+                android:text="تعديل منتج"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
+                android:id="@+id/updateinsideannonce"
+
+                />
 
         </LinearLayout>
     </RelativeLayout>

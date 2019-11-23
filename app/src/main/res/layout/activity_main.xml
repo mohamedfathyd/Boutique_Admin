@@ -4,7 +4,7 @@
     android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backk"
+    android:background="#99ffffff"
     android:layoutDirection="ltr"
     >
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -44,9 +44,12 @@
         android:layout_below="@+id/app_bar"
         >
         <Button
-            android:layout_width="match_parent"
+         android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+
             android:background="@drawable/shape2"
             android:text="طلبات المستخدمين "
 
@@ -57,26 +60,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+
+            android:background="@drawable/shape2"
+            android:text="طلبات قيد التنفيذ مع المندوبين "
+
+            android:id="@+id/orders_mandop"
+
+            />
+        <Button
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
             android:background="@drawable/shape2"
             android:text="أضافة قسم"
             android:layout_marginTop="30dp"
             android:id="@+id/add"
 
             />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/shape2"
-            android:text="مسح قسم"
-            android:layout_marginTop="30dp"
-            android:id="@+id/delete"
 
-            />
         <Button
-            android:layout_width="match_parent"
+          android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+
             android:background="@drawable/shape2"
             android:text="أضافة أعلان خارجي"
             android:layout_marginTop="30dp"
@@ -84,9 +95,11 @@
 
             />
         <Button
-            android:layout_width="match_parent"
+          android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+
             android:background="@drawable/shape2"
             android:text="حذف أعلان خارجي"
             android:layout_marginTop="30dp"
@@ -94,9 +107,11 @@
 
             />
         <Button
-            android:layout_width="match_parent"
+          android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:visibility="gone"
             android:background="@drawable/shape2"
             android:text="أضافة منتج داخل قسم"
             android:layout_marginTop="30dp"
@@ -107,8 +122,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+
             android:background="@drawable/shape2"
-            android:text="حذف منتج داخل قسم "
+            android:text="حذف قسم"
+            android:layout_marginTop="30dp"
+            android:id="@+id/delete"
+
+            />
+        <Button
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="حذف  قسم فرعي "
             android:layout_marginTop="30dp"
             android:id="@+id/deletedouc"
 
@@ -117,26 +146,78 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+
             android:background="@drawable/shape2"
-            android:text="أضافة صور داخل منتج"
+            android:text="حذف اعلان داخلي "
+            android:layout_marginTop="30dp"
+            android:id="@+id/deleteannn"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text=" تعديل قسم"
+            android:layout_marginTop="30dp"
+            android:id="@+id/update"
+
+            /> <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+
+        android:background="@drawable/shape2"
+        android:text="تعديل  قسم فرعي "
+        android:layout_marginTop="30dp"
+        android:id="@+id/updatedouc"
+
+        />
+        <Button
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:text="اضافة صورة داخل اعلان"
+            android:background="@drawable/shape2"
             android:layout_marginTop="30dp"
             android:id="@+id/noti"
 
             />
         <Button
-            android:layout_width="match_parent"
+          android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/shape2"
+            android:layout_gravity="center" android:background="@drawable/shape2"
             android:text="أضافة عرض"
+            android:textColor="#ffffff"
+            android:visibility="gone"
             android:layout_marginTop="30dp"
             android:id="@+id/offer"
 
             />
         <Button
-            android:layout_width="match_parent"
+          android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:background="@drawable/shape2"
+            android:text="مسح عرض"
+            android:layout_marginTop="30dp"
+            android:id="@+id/offerdelete"
+
+            />
+        <Button
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:visibility="gone"
             android:background="@drawable/shape2"
             android:text="أضافة صور عرض"
             android:layout_marginTop="30dp"
@@ -144,9 +225,11 @@
 
             />
         <Button
-            android:layout_width="match_parent"
+          android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+
             android:background="@drawable/shape2"
             android:text="طلبات انضمام التجار"
             android:layout_marginTop="30dp"
@@ -157,6 +240,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="طلبات انضمام مندوبين"
+            android:layout_marginTop="30dp"
+            android:id="@+id/mandop"
+
+            />
+        <Button
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
             android:background="@drawable/shape2"
             android:text="تسجيل حساب لتاجر"
             android:layout_marginTop="30dp"
@@ -164,13 +261,123 @@
 
             />
         <Button
-            android:layout_width="match_parent"
+          android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#ffffff"
+
             android:background="@drawable/shape2"
             android:text="مسح طلب تجار"
             android:layout_marginTop="30dp"
             android:id="@+id/del_tager"
+
+            />
+        <Button
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+         
+            android:background="@drawable/shape2"
+            android:text="مسح  تجار"
+            android:layout_marginTop="30dp"
+            android:id="@+id/deltager"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="مسح  مندوب"
+            android:layout_marginTop="30dp"
+            android:id="@+id/delmandop"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="انشاء حساب مندوب"
+            android:layout_marginTop="30dp"
+            android:id="@+id/createmandop"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="كل التجار"
+            android:layout_marginTop="30dp"
+            android:id="@+id/alltager"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="كل المندوبين"
+            android:layout_marginTop="30dp"
+            android:id="@+id/allmandop"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="كل المستخدمين"
+            android:layout_marginTop="30dp"
+            android:id="@+id/allusers"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="كل الاقسام"
+            android:layout_marginTop="30dp"
+            android:id="@+id/allqesm"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="فاتورة اليوم"
+            android:layout_marginTop="30dp"
+            android:id="@+id/today"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/shape2"
+            android:text="فاتورة بالشهر"
+            android:layout_marginTop="30dp"
+            android:id="@+id/month"
 
             />
     </LinearLayout>
